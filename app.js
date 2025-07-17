@@ -5,7 +5,7 @@ const app= express()
 const userRouter = require('./route/users.route')
 const authRouter = require('./route/auth.route')
 
-app.use('/', (req, res)=>{
+app.get('/', (req, res)=>{
     res.send('i am your home route')
 })
 app.use('/user', userRouter)
